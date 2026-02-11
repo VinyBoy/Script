@@ -27,3 +27,9 @@ sudo systemctl enable --now docker
 docker --version
 docker compose version
 sudo docker run --rm hello-world
+
+sudo usermod -aG docker $USER
+
+newgrp docker
+
+docker ps
